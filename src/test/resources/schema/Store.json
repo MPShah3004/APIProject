@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "properties": {
+    "data": {
+      "items": {
+        "properties": {
+          "address": {
+            "type": "string"
+          },
+          "address2": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "hours": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "lat": {
+            "type": "number"
+          },
+          "lng": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          },
+          "services": {
+            "items": {
+              "properties": {
+                "createdAt": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "storeservices": {
+                  "properties": {
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "serviceId": {
+                      "type": "integer"
+                    },
+                    "storeId": {
+                      "type": "integer"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "updatedAt": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "state": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          },
+          "zip": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "limit": {
+      "type": "integer"
+    },
+    "skip": {
+      "type": "integer"
+    },
+    "total": {
+      "type": "integer"
+    }
+  },
+  "type": "object"
+}
